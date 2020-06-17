@@ -7,14 +7,15 @@ validates input and prints out an invalid message if the number
 does not meet the criteria
 """
 
-"""score_input takes the name and test score and if it is in a valid
-range will output the test name and score
-:param test name, and test score between 1 and 100
-:returns string of combined test name and score
-"""
-
 
 def score_input(test_name, test_score=0, invalid_message="Invalid test score, try again!"):
+    """score_input takes the name and test score and if it is in a valid
+    range will output the test name and score
+    :param invalid_message: message used when input is invalid
+    :param test_score: test score between 1 and 100
+    :param test_name: test name
+    :returns string of combined test name and score
+    """
     result = ""
     try:
         test_score = int(test_score)
